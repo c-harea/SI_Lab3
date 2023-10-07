@@ -65,6 +65,7 @@ int* signText(char* fileName, int b) {
     fclose(file);
 
     char* sha256 = SHA256_Main(fileBuff);
+    printf("File hash value: \n");
     printf("%s\n", sha256);
 
 	int* signature = (int*)malloc(65 * sizeof(int));
