@@ -30,7 +30,7 @@ char keyGenus(int* pubKey, int* prvKey) {
     lambda = lcm(p - 1, q - 1);
     printf("The lambda value is: %u\n", lambda);
 
-    printf("Choose a coprime number < %u: ", lambda);
+    printf("Choose a coprime number(e - private key) < %u: ", lambda);
     scanf("%u", &*(prvKey));
 
     if (*(prvKey) > lambda) {
@@ -46,7 +46,7 @@ char keyGenus(int* pubKey, int* prvKey) {
     }
 
     *(pubKey) = modInverse(*(prvKey), lambda);
-    printf("The compute of d is: %u\n", *(pubKey));
+    printf("The compute of d(public key) is: %u\n", *(pubKey));
 }
 
 int* signText(char* fileName, int b) {
@@ -101,6 +101,9 @@ char verifySignature(char* fileName, int* signature, int b) {
 
 	hash[65] = '\0';
 
+    printf("\n\nDecrypted hash value: \n");
+    printf("%s\n", hash);
+
     FILE* file = fopen(fileName, "rb");
 
     char* fileBuff = (char*)malloc(fileLen);
@@ -109,6 +112,9 @@ char verifySignature(char* fileName, int* signature, int b) {
     fclose(file);
 
     char* sha256 = SHA256_Main(fileBuff);
+
+    printf("\n\Computed file hash value: \n");
+    printf("%s\n", sha256);
 
     for (int i = 0; i < 65; i++)
     {

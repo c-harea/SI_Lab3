@@ -18,7 +18,7 @@ int main()
 
     printf("\nFile Signature: \n");
 
-    for (int i = 0; i < 32; i++)
+    for (int i = 0; i < 65; i++)
     {
         printf("%d", fileSignature[i]);
     }
