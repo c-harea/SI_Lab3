@@ -1,2 +1,11 @@
-﻿  main.c
+﻿  Signature.c
+D:\Docs\UTM\Anul 4\SI\Lab3\DSA\DSA\Signature.c(36,19): warning C4018: '>': signed/unsigned mismatch
+D:\Docs\UTM\Anul 4\SI\Lab3\DSA\DSA\Signature.c(10,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Docs\UTM\Anul 4\SI\Lab3\DSA\DSA\Signature.c(19,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Docs\UTM\Anul 4\SI\Lab3\DSA\DSA\Signature.c(34,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Docs\UTM\Anul 4\SI\Lab3\DSA\DSA\Signature.c(54,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Docs\UTM\Anul 4\SI\Lab3\DSA\DSA\Signature.c(108,12): warning C4129: 'C': unrecognized character escape sequence
+D:\Docs\UTM\Anul 4\SI\Lab3\DSA\DSA\Signature.c(99,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Docs\UTM\Anul 4\SI\Lab3\DSA\DSA\Signature.c(127,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Docs\UTM\Anul 4\SI\Lab3\DSA\DSA\Signature.c(50): warning C4715: 'keyGenus': not all control paths return a value
   DSA.vcxproj -> D:\Docs\UTM\Anul 4\SI\Lab3\DSA\x64\Debug\DSA.exe

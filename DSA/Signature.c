@@ -73,11 +73,7 @@ int* signText(char* fileName, int b) {
 	for (int i = 0; i < 65; i++)
 	{
 		signature[i] = (int)sha256[i];
-	}
-
-	for (int i = 0; i < 65; i++)
-	{
-		signature[i] = moduloPow(signature[i], b, n);
+        signature[i] = moduloPow(signature[i], b, n);
 	}
 
     free(fileBuff);
@@ -92,11 +88,7 @@ char verifySignature(char* fileName, int* signature, int b) {
 	for (int i = 0; i < 65; i++)
 	{
 		signature[i] = moduloPow(signature[i], b, n);
-	}
-
-	for (int i = 0; i < 65; i++)
-	{
-		hash[i] = (char)signature[i];
+        hash[i] = (char)signature[i];
 	}
 
 	hash[65] = '\0';
